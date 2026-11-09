@@ -1,0 +1,63 @@
+{
+  "task": "t1",
+  "label": "old",
+  "commit": "7e7fc377537c3ff9066cc187c4e96e8345046a4c",
+  "node": "v24.15.0",
+  "platform": "darwin 25.3.0",
+  "cpu": "Apple M5 Pro",
+  "finishedAt": "2026-11-09T14:17:27.838Z",
+  "params": {
+    "atTasks": 60,
+    "atSpacingSeconds": 3,
+    "atSessions": 6,
+    "everyTasks": 10,
+    "everyStaggerSeconds": 6,
+    "cronTasks": 3
+  },
+  "expectedDeliveries": 102,
+  "deliveries": 102,
+  "problems": {
+    "missed": 0,
+    "duplicated": 0,
+    "wrongSession": 0,
+    "unexpected": 0
+  },
+  "latencyMs": {
+    "all": {
+      "n": 102,
+      "p50": 17,
+      "p95": 60,
+      "max": 98,
+      "mean": 21.82
+    },
+    "at": {
+      "n": 60,
+      "p50": 17,
+      "p95": 20,
+      "max": 28,
+      "mean": 17.07
+    },
+    "every": {
+      "n": 30,
+      "p50": 18,
+      "p95": 20,
+      "max": 21,
+      "mean": 17.43
+    },
+    "cron": {
+      "n": 12,
+      "p50": 49,
+      "p95": 98,
+      "max": 98,
+      "mean": 56.58
+    }
+  },
+  "resources": {
+    "wallMs": 240100.71,
+    "cpuMs": 5481.1,
+    "loopDelayMaxMs": 98.11,
+    "loopDelayP99Ms": 6.46,
+    "rssMaxMb": 363.81
+  },
+  "modelRequests": 102
+}

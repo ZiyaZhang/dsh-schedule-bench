@@ -64,3 +64,6 @@ The fake model answers every request at once with a short text, so tasks 1, 3 an
 ## Changes
 
 - 2026-11-09: tasks 1, 3 and 4 ran in the planned order (t1 old, t1 new, t3 old, t3 new, t4 new, t4 old). Task 2 runs afterwards because the model endpoint was unreachable from the run machine at the planned time; its own order (new, then old) is unchanged.
+- 2026-11-09: the change's head moved to `9713c9cd5bd` (two commits on top of `4b8e22334f0` that touch delivery, in-flight recurring tasks, clock rollback and recovery). All eight runs were repeated as run `2026-11-09-head-9713c9c` against `old` `7e7fc377537` and `new` `9713c9cd5bd`, in the planned order; run `2026-11-09` stays as the record for `4b8e22334f0`.
+- 2026-11-09: `scripts/run.sh` deletes its copy of the bench from the checkout after each run, because a copy left in `apps/web/tests/` breaks that checkout's next `build:artifacts`. Measurements are unaffected.
+- 2026-11-09: in run `2026-11-09-head-9713c9c`, task 1 crossed the delay threshold (new p95 97 ms against 49 ms; one 279 ms event-loop stall in the new run). As the rules require, task 1 was run once more for both versions, new first, as run `2026-11-09-head-9713c9c-t1-repeat`: new p95 58 ms against 60 ms, longest stall 89 ms against 98 ms. Both runs are kept.

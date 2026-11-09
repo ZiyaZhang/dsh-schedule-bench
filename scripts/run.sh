@@ -48,5 +48,7 @@ for item in "${order[@]}"; do
     fi
     pnpm exec vitest run --config vitest.web.config.ts apps/web/tests/sched-bench.e2e.ts > "$log" 2>&1
   ) && status=ok || status=failed
+  # A copy left in apps/web/tests breaks the checkout's next build:artifacts (the Web client compiler picks it up).
+  rm -f "$checkout/apps/web/tests/sched-bench.e2e.ts"
   echo "$(date -u +%FT%TZ) end   $task $label $status"
 done
