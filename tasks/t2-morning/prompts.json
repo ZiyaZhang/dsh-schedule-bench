@@ -1,0 +1,5 @@
+{
+  "errors": "统计 logs/app.log 中包含 ERROR 的行数，只把这个数字写入 report/errors.txt。",
+  "todo": "把 notes/todo.md 里还没勾选的待办事项逐条抄到 report/todo.txt，每行一条，只写事项文字。",
+  "sales": "计算 data/sales.csv 中 amount 列的总和，保留两位小数，只把结果写入 report/sales.txt。"
+}

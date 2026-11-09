@@ -1,0 +1,120 @@
+2026-11-09T08:00:00Z auth      ERROR database deadlock
+2026-11-09T08:00:17Z api       INFO  job finished
+2026-11-09T08:00:34Z auth      ERROR payment declined by gateway
+2026-11-09T08:00:51Z billing   WARN  slow response
+2026-11-09T08:01:08Z worker    ERROR database deadlock
+2026-11-09T08:01:25Z scheduler INFO  connection reused
+2026-11-09T08:01:42Z scheduler ERROR database deadlock
+2026-11-09T08:01:59Z auth      WARN  retrying upstream call
+2026-11-09T08:02:16Z worker    INFO  connection reused
+2026-11-09T08:02:33Z api       INFO  job finished
+2026-11-09T08:02:50Z auth      INFO  connection reused
+2026-11-09T08:03:07Z scheduler INFO  cache warmed
+2026-11-09T08:03:24Z auth      INFO  config reloaded
+2026-11-09T08:03:41Z auth      INFO  job finished
+2026-11-09T08:03:58Z scheduler ERROR upstream timeout
+2026-11-09T08:04:15Z billing   INFO  job finished
+2026-11-09T08:04:32Z scheduler WARN  retrying upstream call
+2026-11-09T08:04:49Z worker    INFO  job finished
+2026-11-09T08:05:06Z worker    INFO  cache warmed
+2026-11-09T08:05:23Z billing   INFO  cache warmed
+2026-11-09T08:05:40Z api       INFO  config reloaded
+2026-11-09T08:05:57Z auth      INFO  cache warmed
+2026-11-09T08:06:14Z auth      INFO  cache warmed
+2026-11-09T08:06:31Z worker    INFO  job finished
+2026-11-09T08:06:48Z billing   INFO  config reloaded
+2026-11-09T08:07:05Z api       ERROR upstream timeout
+2026-11-09T08:07:22Z billing   INFO  connection reused
+2026-11-09T08:07:39Z auth      INFO  request served
+2026-11-09T08:07:56Z auth      INFO  cache warmed
+2026-11-09T08:08:13Z auth      INFO  config reloaded
+2026-11-09T08:08:30Z worker    INFO  config reloaded
+2026-11-09T08:08:47Z worker    INFO  connection reused
+2026-11-09T08:09:04Z api       INFO  request served
+2026-11-09T08:09:21Z worker    ERROR database deadlock
+2026-11-09T08:09:38Z auth      INFO  cache warmed
+2026-11-09T08:09:55Z api       ERROR database deadlock
+2026-11-09T08:10:12Z billing   INFO  request served
+2026-11-09T08:10:29Z api       INFO  job finished
+2026-11-09T08:10:46Z auth      INFO  connection reused
+2026-11-09T08:11:03Z auth      ERROR disk quota exceeded
+2026-11-09T08:11:20Z worker    INFO  job finished
+2026-11-09T08:11:37Z scheduler INFO  cache warmed
+2026-11-09T08:11:54Z api       WARN  slow response
+2026-11-09T08:12:11Z auth      INFO  job finished
+2026-11-09T08:12:28Z scheduler ERROR database deadlock
+2026-11-09T08:12:45Z auth      ERROR disk quota exceeded
+2026-11-09T08:13:02Z worker    INFO  connection reused
+2026-11-09T08:13:19Z worker    ERROR upstream timeout
+2026-11-09T08:13:36Z auth      INFO  config reloaded
+2026-11-09T08:13:53Z billing   INFO  config reloaded
+2026-11-09T08:14:10Z auth      INFO  request served
+2026-11-09T08:14:27Z api       WARN  queue depth high
+2026-11-09T08:14:44Z worker    ERROR database deadlock
+2026-11-09T08:15:01Z worker    INFO  config reloaded
+2026-11-09T08:15:18Z api       INFO  request served
+2026-11-09T08:15:35Z billing   WARN  slow response
+2026-11-09T08:15:52Z billing   ERROR upstream timeout
+2026-11-09T08:16:09Z billing   INFO  job finished
+2026-11-09T08:16:26Z worker    INFO  config reloaded
+2026-11-09T08:16:43Z billing   INFO  job finished
+2026-11-09T08:17:00Z scheduler ERROR database deadlock
+2026-11-09T08:17:17Z worker    INFO  connection reused
+2026-11-09T08:17:34Z scheduler INFO  connection reused
+2026-11-09T08:17:51Z billing   INFO  config reloaded
+2026-11-09T08:18:08Z worker    INFO  config reloaded
+2026-11-09T08:18:25Z worker    WARN  slow response
+2026-11-09T08:18:42Z worker    INFO  request served
+2026-11-09T08:18:59Z scheduler INFO  job finished
+2026-11-09T08:19:16Z api       ERROR payment declined by gateway
+2026-11-09T08:19:33Z worker    ERROR disk quota exceeded
+2026-11-09T08:19:50Z auth      INFO  config reloaded
+2026-11-09T08:20:07Z billing   INFO  connection reused
+2026-11-09T08:20:24Z worker    INFO  config reloaded
+2026-11-09T08:20:41Z api       ERROR disk quota exceeded
+2026-11-09T08:20:58Z worker    INFO  cache warmed
+2026-11-09T08:21:15Z api       INFO  connection reused
+2026-11-09T08:21:32Z api       INFO  request served
+2026-11-09T08:21:49Z auth      INFO  request served
+2026-11-09T08:22:06Z worker    INFO  cache warmed
+2026-11-09T08:22:23Z scheduler ERROR payment declined by gateway
+2026-11-09T08:22:40Z billing   INFO  config reloaded
+2026-11-09T08:22:57Z auth      INFO  config reloaded
+2026-11-09T08:23:14Z billing   ERROR payment declined by gateway
+2026-11-09T08:23:31Z api       INFO  job finished
+2026-11-09T08:23:48Z billing   ERROR disk quota exceeded
+2026-11-09T08:24:05Z api       INFO  request served
+2026-11-09T08:24:22Z api       INFO  connection reused
+2026-11-09T08:24:39Z scheduler INFO  cache warmed
+2026-11-09T08:24:56Z scheduler INFO  config reloaded
+2026-11-09T08:25:13Z auth      ERROR database deadlock
+2026-11-09T08:25:30Z scheduler WARN  queue depth high
+2026-11-09T08:25:47Z billing   WARN  slow response
+2026-11-09T08:26:04Z auth      INFO  cache warmed
+2026-11-09T08:26:21Z auth      INFO  cache warmed
+2026-11-09T08:26:38Z api       INFO  cache warmed
+2026-11-09T08:26:55Z worker    INFO  connection reused
+2026-11-09T08:27:12Z auth      INFO  job finished
+2026-11-09T08:27:29Z scheduler INFO  connection reused
+2026-11-09T08:27:46Z api       ERROR database deadlock
+2026-11-09T08:28:03Z scheduler INFO  request served
+2026-11-09T08:28:20Z auth      INFO  connection reused
+2026-11-09T08:28:37Z api       WARN  retrying upstream call
+2026-11-09T08:28:54Z billing   WARN  queue depth high
+2026-11-09T08:29:11Z worker    INFO  job finished
+2026-11-09T08:29:28Z billing   WARN  slow response
+2026-11-09T08:29:45Z scheduler ERROR upstream timeout
+2026-11-09T08:30:02Z api       WARN  retrying upstream call
+2026-11-09T08:30:19Z api       WARN  retrying upstream call
+2026-11-09T08:30:36Z billing   WARN  retrying upstream call
+2026-11-09T08:30:53Z scheduler INFO  job finished
+2026-11-09T08:31:10Z scheduler INFO  cache warmed
+2026-11-09T08:31:27Z api       ERROR database deadlock
+2026-11-09T08:31:44Z scheduler ERROR disk quota exceeded
+2026-11-09T08:32:01Z worker    INFO  connection reused
+2026-11-09T08:32:18Z api       INFO  config reloaded
+2026-11-09T08:32:35Z auth      WARN  slow response
+2026-11-09T08:32:52Z worker    INFO  request served
+2026-11-09T08:33:09Z billing   INFO  cache warmed
+2026-11-09T08:33:26Z worker    INFO  connection reused
+2026-11-09T08:33:43Z billing   INFO  connection reused
