@@ -11,6 +11,16 @@ Benchmark for scheduled tasks in [DeepSeek Harness](https://github.com/deepseek-
 | 3 100 tasks due in one second | burst delivery with 100 and 1,000 active tasks: last delivery, CPU, event-loop stalls | fake |
 | 4 Missed while stopped, failed open | catch-up delivers the latest missed occurrence once; a delivery whose Session fails to open is retried | fake |
 
+## Results
+
+| Run | Old | New | Summary |
+| --- | --- | --- | --- |
+| `2026-11-09-head-9713c9c` | `7e7fc377537` | `9713c9cd5bd` | [summary](results/2026-11-09-head-9713c9c/summary.md) |
+| `2026-11-09-head-9713c9c-t1-repeat` (task 1 again, new first, after it crossed the delay threshold) | `7e7fc377537` | `9713c9cd5bd` | [summary](results/2026-11-09-head-9713c9c-t1-repeat/summary.md) |
+| `2026-11-09` (earlier head of the change) | `7e7fc377537` | `4b8e22334f0` | [summary](results/2026-11-09/summary.md) |
+
+Each run directory also holds one JSON file per task and version with every recorded value. Deviations from the plan are listed under "Changes" in [PLAN.md](PLAN.md); behavior seen outside the planned metrics is in [notes/observations.md](notes/observations.md).
+
 ## Layout
 
 - `bench/sched-bench.e2e.ts` — the scenarios. The runner copies it into `apps/web/tests/` of each checkout and runs it with the checkout's own `vitest.web.config.ts`, so it boots the shipped Web composition through the repository's e2e scaffold.
