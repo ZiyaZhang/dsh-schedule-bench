@@ -63,4 +63,4 @@ The fake model answers every request at once with a short text, so tasks 1, 3 an
 
 ## Changes
 
-None yet.
+- 2026-11-09: tasks 1, 3 and 4 ran in the planned order (t1 old, t1 new, t3 old, t3 new, t4 new, t4 old). Task 2 runs afterwards because the model endpoint was unreachable from the run machine at the planned time; its own order (new, then old) is unchanged.

@@ -1,0 +1,76 @@
+{
+  "task": "t3",
+  "label": "new",
+  "commit": "4b8e22334f07c19037bcd624ff56f4bb92db77e3",
+  "node": "v24.15.0",
+  "platform": "darwin 25.3.0",
+  "cpu": "Apple M5 Pro",
+  "finishedAt": "2026-11-09T11:18:03.982Z",
+  "params": {
+    "burstTasks": 100,
+    "burstSessions": 10,
+    "waitingPhases": [
+      0,
+      900
+    ]
+  },
+  "phases": [
+    {
+      "waitingTasks": 0,
+      "totalActiveAtBurst": 100,
+      "createWaitingMs": 0.09,
+      "createWaitingCpuMs": 0.08,
+      "createWaitingLoopMaxMs": 0,
+      "createBurstMs": 1105.6,
+      "problems": {
+        "missed": 0,
+        "duplicated": 0,
+        "wrongSession": 0,
+        "messageDuplicates": 0
+      },
+      "latencyMs": {
+        "n": 100,
+        "p50": 1352,
+        "p95": 2556,
+        "max": 2697,
+        "mean": 1364.06
+      },
+      "burstWindow": {
+        "wallMs": 3778.77,
+        "cpuMs": 1613.62,
+        "loopDelayMaxMs": 19.91,
+        "loopDelayP99Ms": 8.33,
+        "rssMaxMb": 278.17
+      }
+    },
+    {
+      "waitingTasks": 900,
+      "totalActiveAtBurst": 1000,
+      "createWaitingMs": 9273.14,
+      "createWaitingCpuMs": 3153.72,
+      "createWaitingLoopMaxMs": 10.63,
+      "createBurstMs": 1139.43,
+      "problems": {
+        "missed": 0,
+        "duplicated": 0,
+        "wrongSession": 0,
+        "messageDuplicates": 0
+      },
+      "latencyMs": {
+        "n": 100,
+        "p50": 1437,
+        "p95": 2720,
+        "max": 2868,
+        "mean": 1435.62
+      },
+      "burstWindow": {
+        "wallMs": 3979.41,
+        "cpuMs": 1731.71,
+        "loopDelayMaxMs": 14.38,
+        "loopDelayP99Ms": 9.48,
+        "rssMaxMb": 333.47
+      }
+    }
+  ],
+  "modelRequests": 200
+}

@@ -1,0 +1,32 @@
+{
+  "task": "t4",
+  "label": "old",
+  "commit": "7e7fc377537c3ff9066cc187c4e96e8345046a4c",
+  "node": "v24.15.0",
+  "platform": "darwin 25.3.0",
+  "cpu": "Apple M5 Pro",
+  "finishedAt": "2026-11-09T11:21:02.801Z",
+  "params": {
+    "injectedFailures": 1,
+    "observeSeconds": 100
+  },
+  "catchup": {
+    "missedOccurrences": 5,
+    "recurringDeliveries": 1,
+    "recurringDeliveredLatest": true,
+    "recurringNextIsFuture": true,
+    "oneShotDeliveries": 1,
+    "messages": 2,
+    "catchupLatencyMs": [
+      30,
+      53
+    ]
+  },
+  "failure": {
+    "delivered": false,
+    "deliveredAfterMs": null,
+    "openAttempts": 1,
+    "deliveries": 0
+  },
+  "modelRequests": 2
+}
