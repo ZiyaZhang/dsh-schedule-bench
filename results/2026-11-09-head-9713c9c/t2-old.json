@@ -142,14 +142,14 @@
       "toolCalls": [
         "bash {\"command\": \"pwd && ls -la && ls -la logs notes data report 2>&1\", \"description\": \"Inspect workspace layout\"}",
         "bash {\"command\": \"wc -l logs/app.log notes/todo.md data/sales.csv 2>&1\", \"description\": \"Check file sizes\"}",
-        "read {\"file_path\": \"/private/var/folders/v8/9p03q7md59n_49mhqvhq8t0c0000gn/T/dsh-web-e2e-ws-aA143I/t2-sample-2/notes/todo.md\"}",
+        "read {\"file_path\": \"<workspace>/t2-sample-2/notes/todo.md\"}",
         "bash {\"command\": \"grep -c 'ERROR' logs/app.log; echo '---'; grep -n 'ERROR' logs/app.log | head -50; echo '---'; cut -d, -f1-3 data/sales.csv | head -5; echo '---'; ",
         "bash {\"command\": \"python3 - <<'PY'\\nimport csv\\nfrom decimal import Decimal\\nwith open('data/sales.csv', newline='', encoding='utf-8') as f:\\n    rows = list(csv.Dic",
         "bash {\"command\": \"grep -ci 'error' logs/app.log; echo '---'; grep -c '^.*ERROR' logs/app.log; echo '---'; grep -n '\\\\[ \\\\]' notes/todo.md\", \"description\": \"Cross-che",
         "bash {\"command\": \"mkdir -p report && ls -ld report\", \"description\": \"Create report directory\"}",
-        "write {\"file_path\": \"/private/var/folders/v8/9p03q7md59n_49mhqvhq8t0c0000gn/T/dsh-web-e2e-ws-aA143I/t2-sample-2/report/errors.txt\", \"content\": \"26\\n\"}",
-        "write {\"file_path\": \"/private/var/folders/v8/9p03q7md59n_49mhqvhq8t0c0000gn/T/dsh-web-e2e-ws-aA143I/t2-sample-2/report/todo.txt\", \"content\": \"Reply to the vendor abou",
-        "write {\"file_path\": \"/private/var/folders/v8/9p03q7md59n_49mhqvhq8t0c0000gn/T/dsh-web-e2e-ws-aA143I/t2-sample-2/report/sales.txt\", \"content\": \"77604.38\\n\"}",
+        "write {\"file_path\": \"<workspace>/t2-sample-2/report/errors.txt\", \"content\": \"26\\n\"}",
+        "write {\"file_path\": \"<workspace>/t2-sample-2/report/todo.txt\", \"content\": \"Reply to the vendor abou",
+        "write {\"file_path\": \"<workspace>/t2-sample-2/report/sales.txt\", \"content\": \"77604.38\\n\"}",
         "bash {\"command\": \"for f in report/errors.txt report/todo.txt report/sales.txt; do echo \\\"== $f\\\"; cat -A \\\"$f\\\"; done; echo '--- recheck'; grep -c ERROR logs/app.log",
         "bash {\"command\": \"python3 - <<'PY'\\nfor f in ['report/errors.txt','report/todo.txt','report/sales.txt']:\\n    print(f, '=>', repr(open(f).read()))\\nPY\", \"description"
       ]

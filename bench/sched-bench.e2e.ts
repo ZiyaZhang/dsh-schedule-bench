@@ -339,7 +339,7 @@ describe('schedule bench', () => {
         usage.input += event.data.usage?.inputTokens ?? 0
         usage.cacheRead += event.data.usage?.cacheReadTokens ?? 0
         usage.output += event.data.usage?.outputTokens ?? 0
-        for (const block of event.data.message.content) if (block.type === 'tool-call') toolCalls.push(`${block.name} ${block.arguments.slice(0, 160)}`)
+        for (const block of event.data.message.content) if (block.type === 'tool-call') toolCalls.push(`${block.name} ${block.arguments.replaceAll(scaffold.workspaceCwd, '<workspace>').slice(0, 160)}`)
       }
       const occurrences = occurrencesIn(handle)
       const read = async (file: string): Promise<string | undefined> => {
