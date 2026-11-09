@@ -7,7 +7,8 @@ import { fileURLToPath } from 'node:url'
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const runId = process.argv[2]
 if (!runId) throw new Error('run id required')
-const [hit, miss, out] = (process.argv.slice(3).length === 3 ? process.argv.slice(3) : ['0.2', '2', '8']).map(Number)
+// Default: DeepSeek-V4.1-Flash (deepseek-flash) peak-hour prices from the DeepSeek API pricing page, read 2026-11-09.
+const [hit, miss, out] = (process.argv.slice(3).length === 3 ? process.argv.slice(3) : ['0.04', '2', '8']).map(Number)
 const dir = join(root, 'results', runId)
 const load = (task, label) => {
   const path = join(dir, `${task}-${label}.json`)
